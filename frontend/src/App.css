@@ -1,0 +1,52 @@
+  .app-container {
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Equivalent to p-4 */
+  }
+
+  .card {
+    background-color: #fff; /* Equivalent to bg-white */
+    padding: 2rem; /* Padding for a single card */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-xl */
+    width: 100%;
+    max-width: 24rem; /* Adjusted max-width for a single card */
+    text-align: left; /* Align text left for key-value pairs */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+    color: #1f2937; /* Equivalent to text-gray-800 */
+    text-align: center; /* Center the title */
+  }
+
+  .card-item {
+     margin-bottom: 0.75rem; /* Adds space between data items */
+     font-size: 1rem; /* Equivalent to text-base */
+     color: #4b5563; /* Equivalent to text-gray-700 */
+     display: flex; /* Use flexbox for key-value alignment */
+     justify-content: space-between; /* Space out key and value */
+     padding-bottom: 0.5rem; /* Add padding below each item */
+     border-bottom: 1px solid #e5e7eb; /* Add a subtle separator line */
+  }
+
+   .card-item:last-child {
+     margin-bottom: 0; /* Remove bottom margin from the last item */
+     border-bottom: none; /* Remove border from the last item */
+     padding-bottom: 0;
+   }
+
+  .item-key {
+    font-weight: 600; /* Bold the key */
+    color: #1f2937; /* Darker color for the key */
+  }
+
+  .item-value {
+    color: #3b82f6; /* Example color for values (blue) */
+    font-weight: 500; /* Slightly less bold value */
+  }
