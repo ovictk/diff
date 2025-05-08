@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Use a system font stack */
+  } 
+  
   .app-container {
     min-height: 100vh;
     background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
