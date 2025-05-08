@@ -1,17 +1,8 @@
 import React from 'react';
-// import possibilities from '../../api/predictions.json';
+import possibilities from '../../api/predictions.json';
 import './App.css';
 
 function App() {
-  const possibilities = {
-    "ap": "65%",
-    "an": "35%",
-    "young": "40%",
-    "old": "60%",
-    "rich": "70%",
-    "poor": "30%"
-  }
-
   return (
     <>
       <div className="app-container">
@@ -32,21 +23,21 @@ function App() {
           {/* Display Age possibilities */}
           <div className="card-item">
             <span className="item-key">Young:</span>
-            <span className="item-value">{possibilities.young}</span>
+            <span className="item-value">{possibilities.y}</span>
           </div>
           <div className="card-item">
             <span className="item-key">Old:</span>
-            <span className="item-value">{possibilities.old}</span>
+            <span className="item-value">{possibilities.o}</span>
           </div>
 
           {/* Display Wealth possibilities */}
            <div className="card-item">
             <span className="item-key">Rich:</span>
-            <span className="item-value">{possibilities.rich}</span>
+            <span className="item-value">{possibilities.r}</span>
           </div>
           <div className="card-item">
             <span className="item-key">Poor:</span>
-            <span className="item-value">{possibilities.poor}</span>
+            <span className="item-value">{possibilities.p}</span>
           </div>
 
         </div>

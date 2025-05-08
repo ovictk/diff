@@ -7,7 +7,7 @@ import os
 # apple is 0 and android 1
 results = []
 
-total_cnt = 10
+total_cnt = 1000
 
 ap_cnt = 0
 an_cnt = 0
@@ -23,61 +23,61 @@ for i in range(total_cnt):
     # young or old
     if rand < 0.6:
         dataArray.append(0)
-        y_cnt =+ 1
+        y_cnt += 1
         
     else:
         dataArray.append(1)
-        o_cnt =+ 1
+        o_cnt += 1
 
     # poor or rich
     rand = random.random()
 
     if rand < 0.1:
         dataArray.append(0)
-        p_cnt =+ 1
+        p_cnt += 1
     else:
         dataArray.append(1)
-        r_cnt =+ 1
+        r_cnt += 1
 
     # apple or android
     if dataArray[0] == 0 and dataArray[1] == 0:
         rand = random.random()
 
         if rand > 0.7:
-            ap_cnt =+ 1
+            ap_cnt += 1
             dataArray.append(0)
         else:
-            an_cnt =+ 1
+            an_cnt += 1
             dataArray.append(1)
 
     elif dataArray[0] == 0 and dataArray[1] == 1:
         rand = random.random()
 
         if rand > 0.05:
-            ap_cnt =+ 1
+            ap_cnt += 1
             dataArray.append(0)
         else:
-            an_cnt =+ 1
+            an_cnt += 1
             dataArray.append(1)
 
     elif dataArray[0] == 1 and dataArray[1] == 0:
         rand = random.random()
 
         if rand > 0.98:
-            ap_cnt =+ 1
+            ap_cnt += 1
             dataArray.append(0)
         else:
-            an_cnt =+ 1
+            an_cnt += 1
             dataArray.append(1)
 
     else:
         rand = random.random()
 
         if rand > 0.2:
-            ap_cnt =+ 1
+            ap_cnt += 1
             dataArray.append(0)
         else:
-            an_cnt =+ 1
+            an_cnt += 1
             dataArray.append(1)
 
     results_file = "results.json"
@@ -103,7 +103,7 @@ predictions = {
 }
 
 with open(predictions_file, "w") as file:
-    json.dump(predictions, file, indent=2)
+    json.dump(predictions, file, indent=1)
 
 with open(results_file, "w") as file:
-    json.dump(results, file, indent=2)
+    json.dump(results, file, indent=1)
