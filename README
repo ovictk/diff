@@ -1,0 +1,4 @@
+To start the app run:
+
+chmod +x start.sh
+./start.sh

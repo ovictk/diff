@@ -8,7 +8,6 @@ def validateData ():
   try:
       with open(results_file, "r") as file:
           loaded_data = json.load(file)
-      print(f"Erfolgreich {len(loaded_data)} Datenpunkte geladen.")
 
   except FileNotFoundError:
       print(f"Fehler: Datei '{results_file}' nicht gefunden.")

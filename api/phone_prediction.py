@@ -16,11 +16,9 @@ def predictPhone (inputAge, inputWealth):
     try:
         with open(results_file, "r") as file:
             loaded_data = json.load(file)
-        print(f"Erfolgreich {len(loaded_data)} Datenpunkte geladen.")
 
     except FileNotFoundError:
         print(f"Fehler: Datei '{results_file}' nicht gefunden.")
-        print("Bitte führe zuerst 'generate_data.py' aus, um die Daten zu erstellen.")
         exit()
 
     # 2.
@@ -100,5 +98,4 @@ def predictPhone (inputAge, inputWealth):
     elif random_number <= prob_android:
         phone = 'android'
 
-    print(f"Vorhersage für Alter {inputAge} und Reichtum {inputWealth}: {phone}")
     return phone
