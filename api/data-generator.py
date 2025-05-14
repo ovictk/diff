@@ -106,7 +106,7 @@ predictions = {
 }
 
 with open(predictions_file, "w") as file:
-    json.dump(predictions, file)
+    json.dump(predictions, file, indent=2)
 
 with open(results_file, "w") as file:
     json.dump(results, file)
