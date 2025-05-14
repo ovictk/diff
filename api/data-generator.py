@@ -2,13 +2,15 @@ import random
 import json
 import os
 
+from validate_data import validateData
+
 # young is 0 and old is 1
 # poor is 0 and rich is 1
 # apple is 0 and android 1
 
 results = []
 
-total_cnt = 1000
+total_cnt = 100000
 
 ap_cnt = 0
 an_cnt = 0
@@ -104,7 +106,9 @@ predictions = {
 }
 
 with open(predictions_file, "w") as file:
-    json.dump(predictions, file, indent=1)
+    json.dump(predictions, file)
 
 with open(results_file, "w") as file:
-    json.dump(results, file, indent=1)
+    json.dump(results, file)
+
+validateData()

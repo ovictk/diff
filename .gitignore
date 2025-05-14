@@ -1,2 +1,3 @@
 api/predictions.json
 api/results.json
+api/__pycache__
