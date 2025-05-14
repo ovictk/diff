@@ -5,6 +5,7 @@ import os
 # young is 0 and old is 1
 # poor is 0 and rich is 1
 # apple is 0 and android 1
+
 results = []
 
 total_cnt = 1000
