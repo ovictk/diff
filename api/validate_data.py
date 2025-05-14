@@ -2,8 +2,6 @@ import json
 
 
 def validateData ():
-  # 1.
-  # Laden der Trainingsdaten
   results_file = "results.json"
   loaded_data = []
 
